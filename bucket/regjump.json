@@ -1,0 +1,12 @@
+{
+  "version": "1.10.0.0",
+  "description": "Jumps in Regedit.",
+  "url": "https://download.sysinternals.com/files/RegJump.zip",
+  "hash": "53dbc149d0bc0bf464a9970a14a1650fe0d2ca311dd80829c09589d0fe150eec",
+  "bin": [
+    [
+      "regjump.exe",
+      "regjump"
+    ]
+  ]
+}
