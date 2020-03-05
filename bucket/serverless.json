@@ -17,7 +17,10 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe"
+        "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe",
+        "hash": {
+          "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe.sha256"
+        }
       }
     }
   }
