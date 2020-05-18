@@ -1,0 +1,27 @@
+{
+  "version": "0.6.1",
+  "description": "Simple tiling window manager for Windows",
+  "license": "MIT",
+  "url": "https://github.com/tarkah/grout/releases/download/v0.6.1/grout.exe",
+  "hash": "c994a9923f494d470e4acdd6b3f1da77a67e9f2a5a562757cedde17a33ffa6e5",
+  "bin": [
+    [
+      "grout.exe",
+      "grout"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/tarkah/grout",
+    "regex": "tag/v([\\w.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/tarkah/grout/download/v$version/grout.exe",
+        "hash": {
+          "url": "https://github.com/tarkah/grout/releases/download/v$version/grout.sha256"
+        }
+      }
+    }
+  }
+}
