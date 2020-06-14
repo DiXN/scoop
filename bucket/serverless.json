@@ -1,27 +1,31 @@
 {
-  "version": "1.65.0",
-  "description": "Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!.",
-  "license": "MIT",
-  "url": "https://github.com/serverless/serverless/releases/download/v1.65.0/serverless-win-x64.exe",
-  "hash": "71d7d5f25ee6487dd34390b33cbc3af0fea2dd8b340202c875bf024279b1972c",
-  "bin": [
-    [
-      "serverless-win-x64.exe",
-      "serverless"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/serverless/serverless",
-    "regex": "tag/v([\\w.]+)"
-  },
-  "autoupdate": {
+    "version": "1.65.0",
+    "description": "Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!.",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe",
-        "hash": {
-          "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe.sha256"
+        "64bit": {
+            "url": "https://github.com/serverless/serverless/releases/download/v1.65.0/serverless-win-x64.exe",
+            "hash": "71d7d5f25ee6487dd34390b33cbc3af0fea2dd8b340202c875bf024279b1972c"
         }
-      }
+    },
+    "bin": [
+        [
+            "serverless-win-x64.exe",
+            "serverless"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/serverless/serverless",
+        "regex": "tag/v([\\w.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe",
+                "hash": {
+                    "url": "https://github.com/serverless/serverless/releases/download/v$version/serverless-win-x64.exe.sha256"
+                }
+            }
+        }
     }
-  }
 }

@@ -1,0 +1,38 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+  - cron: "0 */6 * * *"
+
+jobs:
+  check:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: fusion-engineering/setup-git-credentials@v2
+      with:
+        credentials: ${{secrets.GIT_CREDENTIAL}}
+
+    - name: Set Git config
+      run: |
+        git config --global user.name "Michael Kaltschmid"
+        git config --global user.email "kaltschmidmichael@gmail.com"
+
+    - name: Install Scoop
+      run: Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+
+    - name: Check Applications
+      run: |
+        $env:path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
+        $ErrorActionPreference = "Continue"
+        try {
+          . "${env:userProfile}\scoop\apps\scoop\current\bin\auto-pr.ps1" 'DiXN/scoop:master' -Dir .\bucket -Push
+        } catch {
+          if ($LastExitCode -eq 1) {
+            exit 0
+          }
+        }
