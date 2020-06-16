@@ -1,0 +1,39 @@
+{
+  "version": "1.12.24",
+  "description": "Secure, Fast & Private Web Browser with Adblocker",
+  "homepage": "https://brave.com",
+  "license": {
+    "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
+    "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
+  },
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/brave/brave-browser/releases/download/v1.12.24/BraveBrowserStandaloneSilentNightlySetup.exe",
+      "hash": "443c4f92f4bfe36a3427e31d66182d4976ea46375e0145055d3886375ea78941"
+    }
+  },
+  "installer": {
+    "script": [
+      "Invoke-ExternalCommand \"$dir\\BraveBrowserStandaloneSilentNightlySetup.exe\""
+    ]
+  },
+  "post_install": "shim \"$env:userProfile\\AppData\\Local\\BraveSoftware\\Brave-Browser-Nightly\\Application\\brave.exe\" $global brave-nightly",
+  "uninstaller": {
+    "script": [
+      "$rootLocation = \"$env:userProfile\\AppData\\Local\\BraveSoftware\\Brave-Browser-Nightly\\Application\"",
+      "$version = Get-ChildItem $rootLocation | Select -First 1 | Select -ExpandProperty Name",
+      "Invoke-Expression \"$rootLocation\\$version\\Installer\\setup.exe --uninstall --chrome-sxs \""
+    ]
+  },
+  "checkver": {
+    "url": "https://github.com/brave/brave-browser/releases",
+    "regex": "Nightly Channel v([\\w.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/brave/brave-browser/releases/download/v$version/BraveBrowserStandaloneSilentNightlySetup.exe"
+      }
+    }
+  }
+}
