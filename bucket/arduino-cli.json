@@ -10,15 +10,15 @@
     ]
   ],
   "checkver": {
-    "github": "https://github.com/DiXN/arduino/arduino-cli",
+    "github": "https://github.com/arduino/arduino-cli",
     "regex": "tag/([\\w.]+)"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/DiXN/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.zip",
+        "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.zip",
         "hash": {
-          "url": "https://github.com/DiXN/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.sha256"
+          "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.sha256"
         }
       }
     }
