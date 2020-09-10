@@ -1,0 +1,26 @@
+{
+  "version": "0.12.0",
+  "description": "Arduino command line interface.",
+  "url": "https://github.com/arduino/arduino-cli/releases/download/0.12.0/arduino-cli_0.12.0_Windows_64bit.zip",
+  "hash": "e2f0d8253e14d1bde5339237eab8abb08909861575ffe1f3e578fc4792346b24",
+  "bin": [
+    [
+      "arduino-cli.exe",
+      "arduino-cli"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/DiXN/arduino/arduino-cli",
+    "regex": "tag/([\\w.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/DiXN/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.zip",
+        "hash": {
+          "url": "https://github.com/DiXN/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.sha256"
+        }
+      }
+    }
+  }
+}
