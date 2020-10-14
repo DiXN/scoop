@@ -1,11 +1,11 @@
 {
-    "version": "2.6.0",
+    "version": "2.7.0",
     "description": "Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more!.",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/serverless/serverless/releases/download/v2.6.0/serverless-win-x64.exe",
-            "hash": "9f794c104c3e8b70adc0403d0fa682bdce47f066fd932b657c5635b2b68a913a"
+            "url": "https://github.com/serverless/serverless/releases/download/v2.7.0/serverless-win-x64.exe",
+            "hash": "1691962ee8e35467c18e0c6aaca5b28ef798a35ef5217c36c8d197c5688884e2"
         }
     },
     "bin": [
