@@ -1,5 +1,5 @@
 {
-    "version": "1.21.37",
+    "version": "1.21.39",
     "description": "Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.21.37/BraveBrowserStandaloneSilentNightlySetup.exe",
-            "hash": "06e2367c9c6670b2c25497ebd36ea372fe252628288ec2206c994e4b4b6390c9"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.21.39/BraveBrowserStandaloneSilentNightlySetup.exe",
+            "hash": "641f033beb86fecd32bb5a8b95f9a0f8d09a8a1f538e46949677d3dfebb584c8"
         }
     },
     "installer": {
