@@ -1,26 +1,26 @@
 {
-  "version": "0.13.0",
-  "description": "Arduino command line interface.",
-  "url": "https://github.com/arduino/arduino-cli/releases/download/0.13.0/arduino-cli_0.13.0_Windows_64bit.zip",
-  "hash": "efd2c9570e44bde1c48b15b9bcf80c1a530b79103146d66515569f7d6ee9c73d",
-  "bin": [
-    [
-      "arduino-cli.exe",
-      "arduino-cli"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/arduino/arduino-cli",
-    "regex": "tag/([\\w.]+)"
-  },
-  "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.zip",
-        "hash": {
-          "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.sha256"
+    "version": "0.19.3",
+    "description": "Arduino command line interface.",
+    "url": "https://github.com/arduino/arduino-cli/releases/download/0.13.0/arduino-cli_0.13.0_Windows_64bit.zip",
+    "hash": "",
+    "bin": [
+        [
+            "arduino-cli.exe",
+            "arduino-cli"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/arduino/arduino-cli",
+        "regex": "tag/([\\w.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.zip",
+                "hash": {
+                    "url": "https://github.com/arduino/arduino-cli/releases/download/$version/arduino-cli_$version_Windows_64bit.sha256"
+                }
+            }
         }
-      }
     }
-  }
 }
