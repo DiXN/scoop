@@ -1,5 +1,5 @@
 {
-    "version": "0.20.0",
+    "version": "0.20.1",
     "description": "Arduino command line interface.",
     "url": "https://github.com/arduino/arduino-cli/releases/download/0.13.0/arduino-cli_0.13.0_Windows_64bit.zip",
     "hash": "",
